@@ -1,64 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background: #edf0eb;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #edf0eb;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  color: #18272b;
 }
 
-.box {
-    background: white;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+h2 {
+  text-align: center;
+  color: #18272b;
+  font-size: 20px;
 }
 
-input, select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+#form {
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-button {
-    background: #0e5a6b;
-    color: white;
-    border: 0;
-    padding: 10px 16px;
-    border-radius: 5px;
+#form input,
+#form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#form button {
+  background-color: #0e5a6b;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+#form button:hover {
+  background-color: #0a4552;
+}
+
+#cancel-btn {
+  background-color: #888888 !important;
+}
+
+#cancel-btn:hover {
+  background-color: #666666 !important;
 }
 
 #error {
-    color: red;
+  color: #a93a3a;
+  font-size: 14px;
+  margin: -10px 0 10px 0;
 }
 
-#total {
-    font-size: 32px;
-    font-weight: bold;
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+#list li {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+#list li button {
+  background-color: #0e5a6b;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 4px;
 }
 
-.small {
-    color: gray;
-    font-size: 13px;
+#list li button:last-child {
+  background-color: #a93a3a;
 }
 
-.delete-btn {
-    background: #a93a3a;
-    padding: 5px 10px;
+#list li button:hover {
+  opacity: 0.85;
 }
