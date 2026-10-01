@@ -1,0 +1,7 @@
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base
+
+# Same database file the FastAPI backend used
+engine = create_engine("sqlite:///expenses.db", connect_args={"check_same_thread": False})
+SessionLocal = sessionmaker(bind=engine)
+Base = declarative_base()
